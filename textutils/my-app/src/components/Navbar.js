@@ -1,6 +1,6 @@
 import React,{useState} from 'react'
 
-function Navbar(){
+function Navbar(props){
     const [mode,setMode] = useState('light');
     const changeMode = ()=>{
         let modele = document.getElementById('modech');
@@ -23,7 +23,7 @@ function Navbar(){
         <>
         <nav className={`navbar navbar-expand-lg navbar-${mode} bg-${mode}`}>
   <div className="container-fluid">
-    <a className="navbar-brand mx-3" href="/">AllSpray Solutions</a>
+    <a id="navbar" className="navbar-brand mx-3" href="#navbar">{props.brand}</a>
     <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
       <span className="navbar-toggler-icon"></span>
     </button>
