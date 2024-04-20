@@ -1,0 +1,11 @@
+*{
+    color:rgb(230, 230, 230);
+    background: rgb(50, 50, 50);
+}
+
+header img{
+    height: 60px;
+    width: 60px;
+    background: none;
+    filter: invert(100%);
+}
